@@ -1,0 +1,41 @@
+.label {
+  cursor: pointer;
+
+  input {
+    appearance: none;
+    visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+
+    + span {
+      display: block;
+      border-radius: 30px;
+      padding: 23px 36px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 0;
+      color: var(--color-black);
+      background-color: #f9f9f9;
+      transition: var(--duration);
+
+      &:hover,
+      &:focus {
+        color: var(--color-white);
+        background-color: lighten(#000, 50%);
+      }
+    }
+  }
+}
+
+.label input:checked + span {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.list {
+  @include list-reset;
+
+  display: flex;
+  gap: 8px;
+}

@@ -1,0 +1,45 @@
+.cart {
+  @include btn-reset;
+
+  display: flex;
+  gap: 26px;
+  border-radius: 30px;
+  padding: 15px 23px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  transition: all var(--duration);
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:hover {
+    box-shadow: 0 5px 20px rgba(#fe5f1e, 0.15);
+    background-color: lighten(#fe5f1e, 5%);
+  }
+}
+
+.total {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 25px;
+    right: -13px;
+    top: -2.5px;
+    opacity: 0.25;
+    background-color: var(--color-white);
+  }
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 0;
+}

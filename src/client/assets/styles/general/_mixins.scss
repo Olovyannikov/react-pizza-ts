@@ -1,0 +1,14 @@
+@mixin btn-reset {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

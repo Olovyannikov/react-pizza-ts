@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "Чизбургер-пицца",
+    "price": 395,
+    "img": "/img/pizza-0.jpeg"
+  },
+  {
+    "id": 1,
+    "name": "Сырная",
+    "price": 450,
+    "img": "/img/pizza-1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Креветка по-азиатски",
+    "price": 290,
+    "img": "/img/pizza-2.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Сырный цыпленок",
+    "price": 385,
+    "img": "/img/pizza-3.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Классическая",
+    "price": 299,
+    "img": "/img/pizza-0.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Овощи гриль",
+    "price": 489,
+    "img": "/img/pizza-1.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Чикен бомбони",
+    "price": 489,
+    "img": "/img/pizza-2.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Индейка в мандаринах",
+    "price": 599,
+    "img": "/img/pizza-3.jpeg"
+  }
+]

@@ -1,0 +1,26 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 1.1;
+  color: var(--color-black);
+  background-color: var(--background-color);
+
+  #__next {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    margin: 45px auto 0;
+    padding-bottom: 45px;
+    height: 100%;
+    max-width: calc(100% - 90px);
+    background-color: var(--color-white);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+  }
+}
+
+.rouble {
+  font-family: 'Roboto', sans-serif;
+}
