@@ -1,11 +1,12 @@
-import { Container } from '@/ui';
-import { ItemsTypesFilter } from '@/components';
-import { filters } from './data';
+import { ItemsTypesFilter, SortByCategories } from '@/components';
+import { filters, categories } from './data';
+import s from './styles.module.scss';
 
 export const FilterSort = (): JSX.Element => {
     return (
-        <Container>
+        <section className={s.sort}>
             <ItemsTypesFilter items={filters} />
-        </Container>
+            <SortByCategories list={categories} />
+        </section>
     );
 };

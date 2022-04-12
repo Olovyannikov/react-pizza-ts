@@ -4,15 +4,15 @@ import { IPizza } from '@/types/pizza.type';
 import { Index } from '@/public-app';
 import { GetStaticProps } from 'next';
 
-const IndexPage = ({ pizzas }: IndexPageProps[] | any): JSX.Element => <Index pizzas={pizzas as IndexPageProps[]} />;
+const IndexPage = ({ pizzas }: IndexPageProps[] | any): JSX.Element => <Index pizzas={pizzas.pizzas as IndexPageProps[]} />;
 
 export default IndexPage;
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps = async () => {
     const pizzas = await getData(API.getPizzas);
 
     return {
-        props: { pizzas },
+        props: { pizzas: pizzas && pizzas.data },
     };
 };
 

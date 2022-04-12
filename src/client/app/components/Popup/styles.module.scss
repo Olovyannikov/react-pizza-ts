@@ -1,0 +1,33 @@
+.list {
+  @include list-reset;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  min-width: 132px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: var(--color-white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+}
+
+.list button {
+  @include btn-reset;
+
+  padding: 10px 14px;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+
+  &.checked {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.015em;
+    color: var(--color-primary);
+    background: rgba(254, 95, 30, 0.05);
+  }
+}
