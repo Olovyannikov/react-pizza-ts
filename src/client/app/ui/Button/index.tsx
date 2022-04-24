@@ -17,7 +17,7 @@ export const Button = ({
     if (href && href.length > 0)
         return (
             <Link href={href as string}>
-                <a className={cn(className)}>{children}</a>
+                <a className={cn(s.btn, s[variant], s[size], s[color], className)}>{children}</a>
             </Link>
         );
 

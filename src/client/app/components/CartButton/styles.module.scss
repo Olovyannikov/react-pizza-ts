@@ -1,6 +1,5 @@
 .cart {
-  @include btn-reset;
-
+  text-decoration: none;
   display: flex;
   gap: 26px;
   border-radius: 30px;

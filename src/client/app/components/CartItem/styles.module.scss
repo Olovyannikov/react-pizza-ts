@@ -1,0 +1,64 @@
+.item {
+  border-top: 1px solid #F4F4F4;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 40px;
+  }
+
+  b {
+    display: block;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+  }
+
+  button {
+    @include btn-reset;
+  }
+}
+
+.img {
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.itemName {
+  display: flex;
+  flex-direction: column;
+  margin-right: 68px;
+
+  b {
+    width: 280px;
+    margin-bottom: 3px;
+  }
+
+  span {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #8D8D8D;
+  }
+}
+
+.itemCounter {
+  margin-right: 93px;
+  max-width: 75px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  button {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.total {
+  white-space: nowrap;
+  margin-right: 93px;
+  width: 120px;
+}

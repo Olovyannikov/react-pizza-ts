@@ -1,5 +1,5 @@
-import { Popup } from '@/components';
 import cn from 'classnames';
+import { Popup } from '@/components';
 import { useEffect, useRef, useState } from 'react';
 import Arrow from './img/arrow.svg';
 import s from './styles.module.scss';
@@ -20,10 +20,14 @@ export const SortByCategories = ({ list }: SortByCategoriesModel): JSX.Element =
     };
 
     useEffect(() => {
-        document.documentElement.addEventListener('click', (e) => onClickOutsideHandler(e));
+        document.documentElement.addEventListener('click', (e: MouseEvent) => onClickOutsideHandler(e));
 
-        return document.documentElement.removeEventListener('click', (e) => onClickOutsideHandler(e));
+        return document.documentElement.removeEventListener('click', (e: MouseEvent) => onClickOutsideHandler(e));
     }, []);
+
+    useEffect(() => {
+        setPopupVisible(false);
+    }, [checked]);
 
     return (
         <div ref={sortRef} className={cn(s.sort, isPopupVisible && s.open)}>

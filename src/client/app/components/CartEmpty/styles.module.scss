@@ -1,0 +1,36 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty h2 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+}
+
+.empty p {
+  margin: 0 0 47px;
+  max-width: 547px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #777777;
+}
+
+.empty svg {
+  margin-bottom: 74px;
+}
+
+.empty button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 46px;
+  line-height: 0;
+}

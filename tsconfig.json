@@ -37,6 +37,9 @@
       ],
       "@/types/*": [
         "client/types/*"
+      ],
+      "@/store/*": [
+        "client/store/*"
       ]
     }
   },

@@ -1,0 +1,9 @@
+.container {
+  margin: 0 auto;
+  max-width: 820px + 100px;
+  width: 100%;
+
+  ul {
+    @include list-reset;
+  }
+}

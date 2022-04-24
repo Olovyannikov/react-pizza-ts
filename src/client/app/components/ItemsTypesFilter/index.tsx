@@ -3,7 +3,7 @@ import { useState, ChangeEvent } from 'react';
 import s from './styles.module.scss';
 import { ItemTypesFilterProps } from './props';
 
-export const ItemsTypesFilter = ({ items }: ItemTypesFilterProps): JSX.Element => {
+export const ItemsTypesFilter = ({ items, onChange }: ItemTypesFilterProps): JSX.Element => {
     const [state, setState] = useState<string>('Все');
 
     return (
@@ -15,11 +15,13 @@ export const ItemsTypesFilter = ({ items }: ItemTypesFilterProps): JSX.Element =
                             <label className={s.label}>
                                 <input
                                     checked={state === f.filter}
-                                    onChange={(e: ChangeEvent<HTMLInputElement>) => setState(e.target.value)}
+                                    onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                                        setState(e.target.value)
+                                        onChange(f.id);
+                                    }}
                                     value={f.filter}
                                     type='radio'
                                     name='filter'
-                                    id={f.id}
                                 />
                                 <span>{f.filter}</span>
                             </label>

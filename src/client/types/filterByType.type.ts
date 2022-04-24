@@ -1,6 +1,6 @@
-export type FilterTypes = 'Все' | 'Мясные' | 'Вегетарианская' | 'Гриль' | 'Острые' | 'Закрытые';
+export type FilterTypes = 'Все' | 'Мясные' | 'Вегетарианская' | 'Острые' | 'Закрытые' | 'Гриль';
 
 export interface IFilters {
-    id: string;
+    id: number;
     filter: FilterTypes;
 }
